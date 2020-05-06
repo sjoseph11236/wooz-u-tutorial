@@ -1,6 +1,6 @@
 # Getting Started 
 
-_SQL is structured Query Language that is written interact and manipulate databases. A database a the organizing of data into a structure such as table with rows and columns._ 
+_SQL is structured Query Language that is written interact and manipulate databases. A database a the organizing of data into a structure such as table with rows and columns so that data can be easily store, managed, updated, and retrieved._ 
 
 # Basic Queries: 
 
@@ -61,19 +61,55 @@ _SQL is structured Query Language that is written interact and manipulate databa
   ```
     SELECT * FROM Student WHERE NOT lname='Doe';
   ```
-## NOT: 
-  - An operator that displays a record if the condition/conditions  are NOT true.
+## LIKE:
+  - An operator that used in WHERE clause to search for a specified pattern in a column.
+  - The two wild cards often used in conjunction with the LIKE operator: 
+    - % the percent sigh represents zero, one, or multiple characters.
+    - _ the underscore represents a single character. 
 
     ### Syntax: 
 
     ```
-      SELECT column 1, column 2, ... FROM table_name WHERE NOT condition;
+      SELECT column 1, column 2, ... FROM table_name WHERE column LIKE pattern; 
     ```
 
     ### Example: 
   ```
-    SELECT * FROM Student WHERE NOT lname='Doe';
+    SELECT * FROM Student WHERE lname LIKE 'a%';
   ```
+
+  This will return all students with a last name that starts with "a".
+
+## ORDER BY:
+  - A keyword used to sort the result-set in ascending or descending order. 
+
+    ### Syntax: 
+
+    ```
+      SELECT column 1, column 2, ... FROM table_name ORDER BY column 1, column 2, ... ASC|DESC;
+    ```
+
+    ### Example: 
+  ```
+    SELECT * FROM Student ORDER BY Country DESC;
+  ```
+
+## IN:
+  - An operator that allows you to specify multiple values in a WHERE clause. 
+  - A short hand for multiple OR conditions.
+
+    ### Syntax: 
+
+    ```
+      SELECT column 1, column 2, ... FROM table_name WHERE column  IN (value 1, value 2,...);
+    ```
+
+    ### Example: 
+  ```
+    SELECT * FROM Student WHERE Country IN ('Germany', 'France', 'UK');
+  ```
+
+  This will return all students that are located in either country.
 
 # Server Functions (String functions) : 
 
@@ -109,4 +145,12 @@ _SQL is structured Query Language that is written interact and manipulate databa
 
   This will return a column of all fnames lower cased.
 
+
 # Set-up
+
+[Database Normalization](https://www.youtube.com/watch?v=ABwD8IYByfk): 
+
+_Database Normalization is a technique of organizing the data in the database. It is systematic approach of decomposing tables to eliminate redundancy.A multi-step process of putting a data in tabular form to reduce the redundancy of data  and improves data integrity._
+
+[Entity Relationship Diagram](https://www.youtube.com/watch?v=QpdhBUYk7Kk): 
+

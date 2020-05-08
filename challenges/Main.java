@@ -10,8 +10,10 @@ class Main {
     // int[] arr2 = { 4,5,6 };
     // System.out.println(arrayPluseArray(arr1, arr2 ));
 
-    System.out.println(points(new String[]
-    {"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"}));
+    // System.out.println(points(new String[]
+    // {"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"}));
+
+    System.out.println(AbbreviateTwoWords("Sayeed Joseph"));
   }
 
   public static String addLetters(String... letters) {
@@ -62,5 +64,11 @@ class Main {
     }
 
     return points; 
+  }
+
+  public static String AbbreviateTwoWords(String name) {
+    String[] splitNames = name.split(" ");
+
+    return(splitNames[0].charAt(0) + "." + splitNames[1].charAt(0)).toUpperCase();
   }
 }

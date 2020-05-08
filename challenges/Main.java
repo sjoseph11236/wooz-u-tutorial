@@ -15,8 +15,17 @@ class Main {
 
     // System.out.println(AbbreviateTwoWords("Sayeed Joseph"));
 
-    System.out.println(wideningCasting(5));
-    System.out.println(narrowCasting(5));
+    // System.out.println(wideningCasting(5));
+    // System.out.println(narrowCasting(5));
+    
+    // Object[] a = { 66, 42 };
+    // Object x = 66;b
+
+    // System.out.println(check(a , x));
+
+    // System.out.println(expressionMatters(2, 1, 2));
+
+    System.out.println(sum(new int[]{1,2,3,4,5}));
   }
 
   public static String addLetters(String... letters) {
@@ -70,9 +79,10 @@ class Main {
   }
 
   public static String AbbreviateTwoWords(String name) {
-    String[] splitNames = name.split(" ");
+    // String[] splitNames = name.split(" ");
+    // return(splitNames[0].charAt(0) + "." + splitNames[1].charAt(0)).toUpperCase();
 
-    return(splitNames[0].charAt(0) + "." + splitNames[1].charAt(0)).toUpperCase();
+    return Arrays.stream(name.split(" ")).map(String::toUpperCase).map(word -> word.substring(0,1)).collect(Collectors.joining("."));
   }
 
   public static double wideningCasting(int start) {
@@ -81,7 +91,51 @@ class Main {
   }
 
   public static int narrowCasting(double start) {
+    // int result = (int) start;
     int result = (int) start;
     return result;
+  }
+
+  public static boolean check(Object[] a, Object x) {
+  
+    // boolean result = false; 
+
+    // for(Object value : a ) {
+    //   if(value.equals(x)) {
+    //     result = true;
+    //   }
+    // }
+
+    //---------
+
+    // return Arrays.asList(a).contains(x);
+
+    // -------
+    return Arrays.stream(a).anyMatch(e -> e == x);
+
+  }
+
+  public static int expressionMatters(int a, int b, int c) {
+    // return Math.max(Math.max(a + b + c, a * b * c), Math.max((a + b) * c, a * (b + c)));
+    
+    // -----
+    // Vector <Integer> sums = new Vector();
+
+    // sums.add(a + b + c);
+    // sums.add(a * b * c);
+    // sums.add((a + b) * c);
+    // sums.add(a * (b + c));
+
+    // Collections.sort(sums);
+
+    // return sums.lastElement();
+
+    // ------
+
+    return IntStream.of(a + b + c, a * b * c, a + b * c, a * b + c, (a + b) * c, a * (b + c)).max().getAsInt();
+  }
+
+  public  static int sum(int[] arr) {
+    return Arrays.stream(arr).filter( value -> value > 0).reduce(0, (a, b) -> a + b);
   }
 }

@@ -1,6 +1,6 @@
 # Getting Started 
 
-_SQL is structured Query Language that is written interact and manipulate databases. A database a the organizing of data into a structure such as table with rows and columns so that data can be easily store, managed, updated, and retrieved._ 
+_SQL is structured Query Language that is written to interact and manipulate databases. A database is the organization of data into a structure such as table with rows and columns so that data can be easily stored, managed, updated, and retrieved._ 
 
 # Basic Queries: 
 

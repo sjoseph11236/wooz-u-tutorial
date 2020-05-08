@@ -25,7 +25,13 @@ class Main {
 
     // System.out.println(expressionMatters(2, 1, 2));
 
-    System.out.println(sum(new int[]{1,2,3,4,5}));
+    // System.out.println(sum(new int[]{1,2,3,4,5}));
+
+    // System.out.println(toAlternativeString("Sayed Joseph"));
+
+    String str =  "Hello";
+    char letter = 'o';
+    System.out.println(strCount(str, letter));
   }
 
   public static String addLetters(String... letters) {
@@ -137,5 +143,24 @@ class Main {
 
   public  static int sum(int[] arr) {
     return Arrays.stream(arr).filter( value -> value > 0).reduce(0, (a, b) -> a + b);
+  }
+
+  public static String toAlternativeString(String string) {
+    return Arrays.stream(string.split(""))
+      .map(letter -> letter.matches("[A-Z]") ? letter.toLowerCase() : letter.toUpperCase()).collect(Collectors.joining(""));
+  } 
+
+  public static int strCount(String str, char letter) {
+    int counter = 0; 
+
+    char[] charArr = str.toCharArray();
+
+    for(char character : charArr) {
+      if(character == letter) {
+          counter++; 
+      }
+    }
+
+    return counter; 
   }
 }

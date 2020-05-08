@@ -13,7 +13,10 @@ class Main {
     // System.out.println(points(new String[]
     // {"1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"}));
 
-    System.out.println(AbbreviateTwoWords("Sayeed Joseph"));
+    // System.out.println(AbbreviateTwoWords("Sayeed Joseph"));
+
+    System.out.println(wideningCasting(5));
+    System.out.println(narrowCasting(5));
   }
 
   public static String addLetters(String... letters) {
@@ -70,5 +73,15 @@ class Main {
     String[] splitNames = name.split(" ");
 
     return(splitNames[0].charAt(0) + "." + splitNames[1].charAt(0)).toUpperCase();
+  }
+
+  public static double wideningCasting(int start) {
+    double result = start; 
+    return result; 
+  }
+
+  public static int narrowCasting(double start) {
+    int result = (int) start;
+    return result;
   }
 }

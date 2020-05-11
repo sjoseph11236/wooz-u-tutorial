@@ -6,9 +6,9 @@ public abstract class EnemyShip {
 
   public void setName(String newName) { name = newName; };
 
-  public double getAmtDamage() { return amtDamage; };
+  public double getDamage() { return amtDamage; };
 
-  public void setAmtDamage(double newAmtDamage ) { amtDamage = newAmtDamage; };
+  public void setDamage(double newAmtDamage ) { amtDamage = newAmtDamage; };
 
   public void followHeroShip() {
     System.out.println( getName() + " is following the hero");
@@ -19,6 +19,6 @@ public abstract class EnemyShip {
   }
   
   public void enemyShipShoots() {
-    System.out.println( getName() + " attacks and does " + getAmtDamage());
+    System.out.println( getName() + " attacks and does " + getDamage());
   }
 }

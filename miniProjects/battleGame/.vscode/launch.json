@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - EnemyShipTesting",
+      "request": "launch",
+      "mainClass": "EnemyShipTesting",
+      "projectName": "battleGame_5b3193fe"
+    }
+  ]
+}

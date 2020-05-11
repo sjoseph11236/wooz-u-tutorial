@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - Client",
+      "request": "launch",
+      "mainClass": "Client",
+      "projectName": "battleGame_5b3193fe"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - EnemyShipTesting",
       "request": "launch",
       "mainClass": "EnemyShipTesting",

@@ -29,9 +29,11 @@ class Main {
 
     // System.out.println(toAlternativeString("Sayed Joseph"));
 
-    String str =  "Hello";
-    char letter = 'o';
-    System.out.println(strCount(str, letter));
+    // String str =  "Hello";
+    // char letter = 'o';
+    // System.out.println(strCount(str, letter));
+
+    System.out.println(tripleTrouble("Bm", "aa", "tn"));
   }
 
   public static String addLetters(String... letters) {
@@ -162,6 +164,16 @@ class Main {
     }
 
     return counter; 
+  }
+
+  public static String tripleTrouble(String one, String two, String  three) {
+    String result = "";
+
+    for(int i = 0; i < one.length(); i++) {
+      result += "" + one.charAt(i) + two.charAt(i) + three.charAt(i);
+    }
+
+    return result; 
   }
 
   

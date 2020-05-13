@@ -1,6 +1,6 @@
 import java.util.stream.*;
 import java.util.*;
-
+import advanced.CountingDuplicates;
 
 class Main { 
   public static void main(String[] args) {
@@ -39,9 +39,9 @@ class Main {
     // ATM atm = new ATM();
     // System.out.println(atm.solve(770));
 
-    System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
+    // System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
   }
-  
+
   public static String addLetters(String... letters) {
     // Store the alphabet
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -180,7 +180,5 @@ class Main {
     }
 
     return result; 
-  }
-
-  
+  }  
 }

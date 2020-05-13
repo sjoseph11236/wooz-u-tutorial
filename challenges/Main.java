@@ -39,7 +39,7 @@ class Main {
     // ATM atm = new ATM();
     // System.out.println(atm.solve(770));
 
-    // System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
+    System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
   }
 
   public static String addLetters(String... letters) {

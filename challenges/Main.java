@@ -1,6 +1,7 @@
 import java.util.stream.*;
 import java.util.*;
 
+
 class Main { 
   public static void main(String[] args) {
     // System.out.println(addLetters("a", "b"));
@@ -33,9 +34,14 @@ class Main {
     // char letter = 'o';
     // System.out.println(strCount(str, letter));
 
-    System.out.println(tripleTrouble("Bm", "aa", "tn"));
-  }
+    // System.out.println(tripleTrouble("Bm", "aa", "tn"));
+    
+    // ATM atm = new ATM();
+    // System.out.println(atm.solve(770));
 
+    System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
+  }
+  
   public static String addLetters(String... letters) {
     // Store the alphabet
     String alphabet = "abcdefghijklmnopqrstuvwxyz";

@@ -1,6 +1,6 @@
 import java.util.stream.*;
 import java.util.*;
-import advanced.CountingDuplicates;
+// import advanced.CountingDuplicates;
 
 class Main { 
   public static void main(String[] args) {
@@ -39,7 +39,11 @@ class Main {
     // ATM atm = new ATM();
     // System.out.println(atm.solve(770));
 
-    System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
+    // System.out.println(CountingDuplicates.duplicateCount("abcdeaa")); // 1
+  
+    // System.out.println(LongestConsec.longestConsec(new String[] {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}, 2));
+
+    System.out.println(DuplicateEncoder.encode("Sayeed"));
   }
 
   public static String addLetters(String... letters) {

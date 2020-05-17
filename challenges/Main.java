@@ -43,7 +43,9 @@ class Main {
   
     // System.out.println(LongestConsec.longestConsec(new String[] {"zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"}, 2));
 
-    System.out.println(DuplicateEncoder.encode("Sayeed"));
+    // System.out.println(DuplicateEncoder.encode("Sayeed"));
+
+    System.out.println(NextHigher.nextHigher(1));
   }
 
   public static String addLetters(String... letters) {

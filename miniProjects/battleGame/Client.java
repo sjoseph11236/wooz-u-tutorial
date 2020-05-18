@@ -41,7 +41,7 @@ public class Client {
       // --- 
       // create factory object to access method
       // try changing to method class
-      EnemyShipFactory shipFactory = new EnemyShipFactory();
+      // EnemyShipFactory shipFactory = new EnemyShipFactory();
 
       EnemyShip theEnemy = null; 
 
@@ -53,8 +53,10 @@ public class Client {
         // Store the user input.
         String typeOfShip = userInput.nextLine();
         
-        // Create and assign the inputed ship to theEnemy
-        theEnemy = shipFactory.makeEnemyShip(typeOfShip);
+        // // Create and assign the inputed ship to theEnemy
+        // theEnemy = shipFactory.makeEnemyShip(typeOfShip);
+
+        theEnemy = EnemyShip.makeEnemyShip(typeOfShip);
         
         // // if you make makeEnemyShip a static method 
         // theEnemy = EnemyShipFactory.makeEnemyShip(typeOfShip);

@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Demo",
+      "request": "launch",
+      "mainClass": "Demo",
+      "projectName": "gui-elements_4e4a877d"
+    }
+  ]
+}

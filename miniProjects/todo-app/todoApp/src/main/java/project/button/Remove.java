@@ -15,8 +15,8 @@ public class Remove implements Button {
   }
 
   public String onClick() {
-    String clicked = "Task was " + this.type.toString();
-    System.out.println("Task was " + this.type.toString());
+    String clicked = "Task was " + this.type.toString()+"D";
+    System.out.println("Task was " + this.type.toString() +"D");
     return clicked;
   }
 }

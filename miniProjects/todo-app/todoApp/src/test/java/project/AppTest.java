@@ -27,15 +27,15 @@ public class AppTest
 
     @Test
     public void todoHasName(){
-        String expected = todo.getName();
-        String actual = "John Doe";
+        String expected = "John Doe"; 
+        String actual = todo.getName();
         assertEquals(expected, actual);
     }
 
     @Test
     public void todoHasTask() {
-        String expected = todo.getTask();
-        String actual = "Clean Room";
+        String expected = "Clean Room";
+        String actual = todo.getTask();
         assertEquals(expected, actual);
     }
     
@@ -48,11 +48,15 @@ public class AppTest
 
     // Button Test Cases
     @Test
-    public void renderButton() {
-        String expected = remove.render();
-        String actual =  "--" + "REMOVE" + "--";
+    public void renderRemoveButton() {
+        String expected = "--" + "REMOVE" + "--"; 
+        String actual = remove.render();
         assertEquals(expected, actual);
     }
-    
-    
+    @Test
+    public void clickRemoveButton() {
+        String expected = "Task was REMOVED";
+        String actual = remove.onClick();
+        assertEquals(expected, actual);
+    }
 }

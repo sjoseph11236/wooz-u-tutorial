@@ -1,10 +1,13 @@
 package project;
 
+import project.button.*;
+
 public class Todo {
 
   private String name; 
   private String task; 
-  // private Button remove;
+  private Button remove;
+
   public Todo(String name, String task) {
     this.name = name; 
     this.task = task;
@@ -24,5 +27,14 @@ public class Todo {
 
   public void setTask(String task) {
     this.task = task;
+  }
+
+  public Button createButton() {
+    this.remove = new Remove();
+    return this.remove;
+  }
+
+  public String renderDetailsAndButton() {
+    return "Name: " + this.name + "\n" + "Task: " + this.task + "\n" + this.remove.render();
   }
 }

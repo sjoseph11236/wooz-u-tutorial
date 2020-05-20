@@ -42,11 +42,19 @@ public class AppTest
     @Test
     public void todoHasRemoveButton() {
         String expected = "REMOVE";
-        String actual = todo.button.getType().toString();
+        String actual = todo.createButton().getType().toString();
         assertEquals(expected, actual);
     }
 
-    // Button Test Cases
+    @Test
+    public void renderTodoDetailsAndButton() {
+        String expected = "Name: John Doe\n" + "Task: Clean Room\n" + "--" + "REMOVE" + "--";
+        todo.createButton();
+        String actual = todo.renderDetailsAndButton();
+        assertEquals(expected, actual);
+    }
+
+    // ---------***Button Test Cases**-----------\\
     @Test
     public void renderRemoveButton() {
         String expected = "--" + "REMOVE" + "--"; 

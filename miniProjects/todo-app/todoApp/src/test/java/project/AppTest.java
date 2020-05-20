@@ -39,12 +39,12 @@ public class AppTest
         assertEquals(expected, actual);
     }
     
-    // @Test
-    // public void todoHasRemoveButton() {
-    //     String expected = todo.button.type;
-    //     String actual = "REMOVE";
-    //     assertEquals(expected, actual);
-    // }
+    @Test
+    public void todoHasRemoveButton() {
+        String expected = "REMOVE";
+        String actual = todo.button.getType().toString();
+        assertEquals(expected, actual);
+    }
 
     // Button Test Cases
     @Test
@@ -53,10 +53,25 @@ public class AppTest
         String actual = remove.render();
         assertEquals(expected, actual);
     }
+
     @Test
     public void clickRemoveButton() {
         String expected = "Task was REMOVED";
         String actual = remove.onClick();
+        assertEquals(expected, actual);
+    }
+
+    @Test 
+    public void checkRemoveButtonIsSmall() {
+        String expected = "SMALL";
+        String actual = remove.getSize().toString();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void checkRemoveButtonHasType() {
+        String expected = "REMOVE";
+        String actual = remove.getType().toString();
         assertEquals(expected, actual);
     }
 }

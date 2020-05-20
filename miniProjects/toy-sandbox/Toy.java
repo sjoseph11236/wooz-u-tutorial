@@ -1,4 +1,3 @@
-
 public interface Toy {
   public void sayCatchPhrase();
   public void setCatchPhrase(String string);

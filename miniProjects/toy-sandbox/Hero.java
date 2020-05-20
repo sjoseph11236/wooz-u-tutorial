@@ -1,37 +1,3 @@
-// public class Hero implements Toy{ 
-//   private String catchPhrase; 
-//   private String name;
-//   private int powerLevel; 
-
-//   public void sayCatchPhrase() {
-//     System.out.println(this.catchPhrase);
-//   }
-
-//   public String getName() {
-//     return this.name;
-//   }
-
-//   public void setName(String name) {
-//     this.name = name; 
-//   }
-
-//   public void setCatchPhrase(String catchPhrahse) {
-//     this.catchPhrase = catchPhrahse;
-//     // return catchPhrahse;
-//   }
-
-//   public int getPowerLevel() {
-//     return this.powerLevel;
-//   }
-
-//   public void setPowerLevel(int powerLevel) {
-//     this.powerLevel = powerLevel;
-//   }
-// }
-
-
-
-// I was trying to use the constructor to set properties, nut I don't know how to do it in the factory design pattern
 public class Hero implements Toy{ 
   private String catchPhrase; 
   private String name;

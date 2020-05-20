@@ -1,7 +1,6 @@
 public class ToyFactory {
   public static Toy createToy(String instanceType, String name, String catchPhrase, int powerLevel, String weapon) {
     if(instanceType == "Hero") {
-      // return new Hero(catchPhrase, name, powerLevel);
       return new Hero(catchPhrase, name, powerLevel);
     }
     else if(instanceType == "Villian") {
@@ -12,5 +11,3 @@ public class ToyFactory {
     }
   } 
 }
-
-// String instanceType, String name, String catchPhrase, int powerLevel, int stoneCount

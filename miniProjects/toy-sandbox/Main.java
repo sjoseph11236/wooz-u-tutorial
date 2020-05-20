@@ -4,9 +4,11 @@ class Main {
     // directly instaniting from another class
     Toy ironMan = ToyFactory.createToy("Hero", "Iron Man", " I am Iron man!", 75, null);
     Toy thanos = ToyFactory.createToy("Villian", "Thanos", "I am inevitable!" , 85, "Infinity Gaunlet");
-    Toy redHulk = ToyFactory.createToy("Villian", "Red Hulk", "It culmnber time", 50, "cars");
-    Villian  joker = new Villian("Put a smile on that face!", "Joker", 75, "Knife");
-    System.out.println(thanos.getWeapon());
+    // Toy redHulk = ToyFactory.createToy("Villian", "Red Hulk", "It culmnber time", 50, "cars");
+    // Toy joker = ToyFactory.createToy("Villian", "Put a smile on that face!", "Joker", 75, "Knife");
+    // System.out.println(thanos.getWeapon());
+    // redHulk.another();
+
     System.out.println(ironMan.getWeapon());
 
     // ironMan.sayCatchPhrase();

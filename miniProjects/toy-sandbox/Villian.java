@@ -38,4 +38,8 @@ public class Villian implements Toy{
   public String getWeapon() {
     return this.weapon;
   }
+
+  public void another () {
+    System.out.println("Another");
+  }
 }

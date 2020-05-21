@@ -2,7 +2,7 @@ package project;
 
 import project.button.*;
 
-public class Todo {
+public class Todo extends Container{
 
   private String name; 
   private String task; 

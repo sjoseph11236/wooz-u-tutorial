@@ -9,9 +9,7 @@ public class Remove implements Button {
   private ButtonSize size = ButtonSize.SMALL;
 
   public String render(){
-    String rendering =  "--" + this.type.toString() + "--";
-    System.out.println("--" + this.type.toString() + "--");
-    return rendering;
+    return  "--" + this.type.toString() + "--";
   }
 
   public String onClick() {

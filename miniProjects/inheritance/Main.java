@@ -10,7 +10,13 @@ class Main {
     // println or print calls the toString method by default
     System.out.println(myVehicle);
 
-    Truck myTruck = new Truck("Ford", "F150", 500, true);
+    System.out.println("---------");
+
+    short cap = 500;
+    // Truck myTruck = new Truck("Ford", "F150", 500, true);
+    // Truck myTruck = new Truck("Ford", "F150", cap, true);
+    Truck myTruck = new Truck("Ford", "F150", cap);
+
     System.out.println(myTruck);
   }
 }

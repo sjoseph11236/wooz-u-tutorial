@@ -2,18 +2,23 @@ package inventory;
 
 public class Truck extends Vehicle {
   
-  private int cargoCapacity; 
+  private short cargoCapacity; 
   private boolean hasHitch = false; 
 
-  public Truck(String make, String model, int cargoCapacity, boolean hasHitch) {
+  public Truck(String make, String model, short cargoCapacity, boolean hasHitch) {
     // ingerting these properties
     super(make, model);
   
     this.hasHitch = hasHitch; 
     this.cargoCapacity = cargoCapacity;
   }
+  public Truck(String make, String model, short cargoCapacity  ) {
+    // ingerting these properties
+    super(make, model);
+    this.cargoCapacity = cargoCapacity;
+  }
 
-  public int getCargoCapacity() {
+  public short getCargoCapacity() {
     return this.cargoCapacity;
   }
 
@@ -21,7 +26,7 @@ public class Truck extends Vehicle {
     return this.hasHitch;
   }
 
-  public void setCargoCapacity(int cargoCapacity) {
+  public void setCargoCapacity(short cargoCapacity) {
     this.cargoCapacity = cargoCapacity;
   }
 

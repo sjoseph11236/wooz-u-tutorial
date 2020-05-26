@@ -2,8 +2,8 @@
 
   _Java is computer programming language that enforces OOP model that was released by Sun Microsystems in 1995._
 
-  JAVA 8 is a major feature release of JAVA programming langauge development. Features includes Streams API, Generics, etc. 
-
+  JAVA 8 is a major feature release of JAVA programming language development. Features includes Streams API, Generics, etc. 
+  
 ## Key Terms:
   - JVM: Java Virtual Machine
   - JRE: Java Runtime Environment
@@ -45,14 +45,38 @@ _The class must match the name of the file in the directory._
   _These terms make-up the main method signature._
 
  - **Public** : This the access modifier to the main method. It has to be public so that Java runtime can execute this method.
- - **Static** : The main method has to static so that JVM can load the class into memory and call the main method.
+ - **Static** : A modifier for how the method should be accessed. The main method has to static so that JVM can load the class into memory and call the main method.
  - **Void** : Java main method doesn't return anything. 
  - **String[] args** : The main method single argument of type String array. Also called the Command-Line arguments.
 
 ## Key Terms: 
   - **int** : integer
-  - **javac** : VS code CLI command for ava Complier
+  - **javac** : VS code CLI command for Java Complier
   - **Package java.lang** : Provides classes and interfaces that are fundamental to the design of the Java programming language.
+
+
+
+## Data Types: 
+
+```
+  byte myByte = 128;   // Give an error to emphasis the capacity of byte. 
+  byte myByte = 127; 	//1 byte	Stores whole numbers from -128 to 127
+  System.out.println(myByte);
+
+  short myShort = 128; //2 bytes	Stores whole numbers from -32,768 to 32,767
+  int myInt = 10; 	// 4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+  
+  long myLong = 1282;  
+  long myLong = 1282L;  //8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+      
+  float  myFloat = 13.23 
+  float  myFloat = 13.23f  //4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+  double myDouble = 112.3234343  //	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
+   
+  boolean myBoolean = true;  // 1 bit
+  char myChar = 'S';  // 2 bytes	Stores a single character/letter or ASCII values
+``` 
 
 ## Control Flow
   - if, else if and else

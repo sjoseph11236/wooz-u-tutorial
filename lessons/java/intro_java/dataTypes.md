@@ -129,3 +129,25 @@ type promotion in java is when one operand is a long, float or double the whole 
     System.out.println(new String(newCharacters)); // HAPPY
   ```
   
+
+  # Data Types: 
+
+```
+  byte myByte = 128;   // Give an error to emphasis the capacity of byte. 
+  byte myByte = 127; 	//1 byte	Stores whole numbers from -128 to 127
+  System.out.println(myByte);
+
+  short myShort = 128; //2 bytes	Stores whole numbers from -32,768 to 32,767
+  int myInt = 10; 	// 4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+  
+  long myLong = 1282;  
+  long myLong = 1282L;  //8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+      
+  float  myFloat = 13.23 
+  float  myFloat = 13.23f  //4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+  double myDouble = 112.3234343  //	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
+   
+  boolean myBoolean = true;  // 1 bit
+  char myChar = 'S';  // 2 bytes	Stores a single character/letter or ASCII values
+``` 

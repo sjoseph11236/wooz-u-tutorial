@@ -48,7 +48,7 @@ The creational design pattern is concerned with the method of creating objects.
 The structure of the application as the entry point or the client code, the  An interface or abstract class is responsible for how objects should be created within the concrete subclass. Concrete means the the class instantiates an object. An abstract class is only inherited from and not instantiated. 
 
 
-
+https://www.javacodegeeks.com/2012/07/solve-design-problems-using-factory.html
 
 
   

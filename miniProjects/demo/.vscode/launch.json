@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - EmailApp",
+      "request": "launch",
+      "mainClass": "emailapp.EmailApp",
+      "projectName": "demo_cb621417"
+    }
+  ]
+}
